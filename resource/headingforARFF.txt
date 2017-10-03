@@ -1,0 +1,46 @@
+@RELATION relation
+                    
+@ATTRIBUTE num_of_words_sentence NUMERIC
+@ATTRIBUTE num_of_words_subject NUMERIC
+@ATTRIBUTE num_of_words_object NUMERIC
+@ATTRIBUTE num_of_words_predicate NUMERIC
+
+@ATTRIBUTE num_biomed_entities_sentence NUMERIC
+@ATTRIBUTE num_biomed_entities_subject NUMERIC
+@ATTRIBUTE num_biomed_entities_object NUMERIC
+@ATTRIBUTE num_biomed_entities_predicate NUMERIC
+@ATTRIBUTE is_subject_in_UMLS NUMERIC
+@ATTRIBUTE is_object_in_UMLS NUMERIC
+@ATTRIBUTE is_predicate_in_UMLS NUMERIC
+
+@ATTRIBUTE num_biomed_entities_sentence_Mesh NUMERIC
+@ATTRIBUTE num_biomed_entities_subject_Mesh NUMERIC
+@ATTRIBUTE num_biomed_entities_object_Mesh NUMERIC
+@ATTRIBUTE num_biomed_entities_predicate_Mesh NUMERIC
+@ATTRIBUTE is_subject_in_Mesh NUMERIC
+@ATTRIBUTE is_object_in_Mesh NUMERIC
+@ATTRIBUTE is_predicate_in_Mesh NUMERIC
+
+@ATTRIBUTE num_biomed_entities_sentence_NCI NUMERIC
+@ATTRIBUTE num_biomed_entities_subject_NCI NUMERIC
+@ATTRIBUTE num_biomed_entities_object_NCI NUMERIC
+@ATTRIBUTE num_biomed_entities_predicate_NCI NUMERIC
+@ATTRIBUTE is_subject_in_NCI NUMERIC
+@ATTRIBUTE is_object_in_NCI NUMERIC
+@ATTRIBUTE is_predicate_in_NCI NUMERIC
+
+@ATTRIBUTE num_biomed_entities_sentence_SNOMED NUMERIC
+@ATTRIBUTE num_biomed_entities_subject_SNOMED NUMERIC
+@ATTRIBUTE num_biomed_entities_object_SNOMED NUMERIC
+@ATTRIBUTE num_biomed_entities_predicate_SNOMED NUMERIC
+@ATTRIBUTE is_subject_in_SNOMED NUMERIC
+@ATTRIBUTE is_object_in_SNOMED NUMERIC
+@ATTRIBUTE is_predicate_in_SNOMED NUMERIC
+
+@ATTRIBUTE dist_sub_obj NUMERIC
+@ATTRIBUTE dist_sub_pred NUMERIC
+@ATTRIBUTE dist_pred_obj NUMERIC
+
+@ATTRIBUTE class {T,F}
+
+@DATA
