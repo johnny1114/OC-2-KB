@@ -24,11 +24,11 @@ public class oc2kb {
     
     public static void main(String[] args) {
         try{
-            String file = "/Users/jlossioventura/Downloads/stanford-postagger-full-2016-10-31/sample-input.txt";
-        
+            String file_in = "PATH_TO_YOUR_FILE/your_file.txt";
+            String directory_out = "YOUR_DIRECTORY";
         
             //1. Preprocess the file
-            ArrayList<String> sentences = stanfordPreprocessing.preprocess(file);
+            ArrayList<String> sentences = stanfordPreprocessing.preprocess(file_in);
             //System.out.println(sentences.size() + "\n" + sentences.get(0));
             System.out.println("1. Finished: Preprocessing");
 
@@ -49,7 +49,7 @@ public class oc2kb {
             System.out.println("4. Finished: Predicate classification");
 
             //5. RDF creation
-            RDFcreation.createRDF(al_,al_index_validated);
+            RDFcreation.createRDF(al_,al_index_validated,directory_out);
             System.out.println("5. Finished: RDF creation");
             
         }catch(Exception ex){

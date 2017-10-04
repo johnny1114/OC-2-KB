@@ -24,7 +24,7 @@ public class RDFcreation {
     static String date         = "09/30/2017";
  
        
-    public static String createRDF(ArrayList<ArrayList<String>> al_, ArrayList<Integer> al_aux) {
+    public static String createRDF(ArrayList<ArrayList<String>> al_, ArrayList<Integer> al_aux, String directory_out) {
         // some definitions
         // 0   index
         // 1   sentence
@@ -55,7 +55,7 @@ public class RDFcreation {
             //System.out.println(model);
             
             
-            FileWriter fw = new FileWriter(System.getProperty("user.dir") + File.separator + "oc2kb.rdf");
+            FileWriter fw = new FileWriter(directory_out + File.separator + "oc2kb.rdf");
             BufferedWriter bw = new BufferedWriter(fw);
 
             model.write(bw);
